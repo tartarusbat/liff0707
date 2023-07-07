@@ -30,7 +30,7 @@
                     //liff.closeWindow();
                 })
                 .catch((err) => {
-                    console.log("error", err);
+                    document.getElementById("errs").innerHTML=err;
                 });
                 })
                 .catch((err) => {
@@ -45,3 +45,4 @@
         });
     </script>
   </head>
+  <div id="errs"></div>
