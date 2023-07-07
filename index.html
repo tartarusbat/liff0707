@@ -68,7 +68,7 @@
                 liff
                 .sendMessages(n<1?award1:award2)
                 .then(() => {
-                    //liff.closeWindow();
+                    liff.closeWindow();
                 })
                 .catch((err) => {
                     document.getElementById("errs").innerHTML=err;
