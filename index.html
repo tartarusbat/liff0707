@@ -16,13 +16,17 @@
                 liff
                 .sendMessages([
                     {
-                    type: "text",
-                    text: "Test!!",
-                    //text: "",
+                        type: "image",
+                        originalContentUrl: "https://megapx-assets.dcard.tw/images/a13ae519-781b-4492-91b7-8751a193dc14/orig.jpeg",
+                        previewImageUrl: "https://megapx-assets.dcard.tw/images/a13ae519-781b-4492-91b7-8751a193dc14/orig.jpeg"
+                    },
+                    {
+                        type: "text",
+                        text: "Test!!",
+                        //text: "",
                     },
                 ])
                 .then(() => {
-                    console.log("message sent");
                     liff.closeWindow();
                 })
                 .catch((err) => {
