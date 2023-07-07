@@ -63,9 +63,9 @@
                 liff.getProfile()
                 .then(profile => {
                     var n = Math.floor(Math.random() * 10);
-                    if(n>0) n=1;
+                    if(n>1) n=1;
                 liff
-                .sendMessages(award[n])
+                .sendMessages(award[1])
                 .then(() => {
                     //liff.closeWindow();
                 })
