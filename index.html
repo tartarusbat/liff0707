@@ -2,9 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>你好，GitHub</title>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   </head>
   <body>
-    <h1>覺得厲害</h1>
+    <script>
+        var liffID = '1657394487-x6jML5LV';
+
+        liff.init({
+        liffId: liffID
+        }).then(function() {
+        console.log('LIFF init');
+        
+            liff.sendMessages([
+            {
+                type: 'text',
+                text: 'Hello, World!'
+            }
+            ]).then(function(res) {
+                console.log(res)
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
+        
+        }).catch(function(error) {
+        console.log(error);
+        });
+    </script>>
   </body>
 </html>
