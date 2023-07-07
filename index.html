@@ -2,16 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script></script>
   </head>
   <body>
-    <script>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js">
         var liffID = '1657394487-x6jML5LV';
 
         liff.init({
         liffId: liffID
         }).then(function() {
-        console.log('LIFF init');
+        //console.log('LIFF init');
         
             liff.sendMessages([
             {
@@ -19,7 +19,7 @@
                 text: 'Hello, World!'
             }
             ]).then(function(res) {
-                console.log(res)
+                
             })
             .catch(function(error) {
                 console.log(error);
@@ -28,6 +28,6 @@
         }).catch(function(error) {
         console.log(error);
         });
-    </script>>
+    </script>
   </body>
 </html>
