@@ -66,10 +66,10 @@
                 .then(profile => {
                     var n = Math.floor(Math.random() * 10);
                 liff
-                .sendMessages({
+                .sendMessages([{
                     type: "text",
                     text: "我已經把程式碼都改成全域變數，速度有顯著的提升",
-                  })
+                },])
                 .then(() => {
                     liff.closeWindow();
                 })
